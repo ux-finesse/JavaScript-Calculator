@@ -1,23 +1,29 @@
-const number1 = parseInt(prompt ('Enter first number: '));
-const operator = prompt ('Enter operator ( either +, -, * or / ): ');
-const number2 = parseInt(prompt ('Enter the second number: '));
 
-var result;
+// parseInt -- for integers
+// prompt to ask users to input their value
+
+const firstFigure = parseInt(prompt ('Enter first number: '));
+const operator = prompt ('Enter operator ( either +, -, * or / ): ');
+const secondFigure = parseInt(prompt ('Enter the second number: '));
+
+
+let result;
 
 if ( operator == '+'){
-    result = number1 + number2;
+    result = firstFigure + secondFigure;
 }
 
 else if ( operator == '-'){
-    result = number1 - number2;
+    result = firstFigure - secondFigure;
 }
 
 else if ( operator == '*'){
-    result = number1 * number2;
+    result = firstFigure * secondFigure;
 }
 
 else if ( operator == '/'){
-    result = number1 / number2;
+    result = firstFigure / secondFigure;
 }
 
-alert( number1 + operator + number2 + "=" + result);
+// alert the answer
+alert( firstFigure + operator + secondFigure + "=" + result);
